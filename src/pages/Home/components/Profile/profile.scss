@@ -1,0 +1,72 @@
+.profile-sidebar {
+  background-color: #f8f8f8;
+  width: 20%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+  &__photo {
+    max-width: auto;
+
+    &-image {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  &__user-data {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  &__actions {
+    display: flex;
+    flex-direction: column;
+
+    &__edit-profile {
+      .link {
+        padding: 10px 5px;
+        color: #779dcd;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: all 300ms;
+
+        &-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+    &__items {
+      display: flex;
+      flex-direction: column;
+      /* padding: 10px 0; */
+      background-color: #eff7ff;
+      border-left: 1px solid rgba(0, 0, 0, 0.12);
+      border-right: 1px solid rgba(0, 0, 0, 0.12);
+      border-top: 1px solid rgba(0, 0, 0, 0.12);
+      margin-top: 10px;
+
+      .link {
+        padding: 10px 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        color: #889099;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: all 300ms;
+
+        &:hover {
+          background-color: #cbddee54;
+        }
+
+        &-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

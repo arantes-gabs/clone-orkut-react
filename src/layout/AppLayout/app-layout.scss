@@ -1,7 +1,7 @@
 .layout-app {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   min-height: 100vh;
-  
+
   &.welcome-template {
     padding-left: 532px;
 
@@ -13,4 +13,7 @@
   &:not(.welcome-template) {
     padding-left: 172px;
   }
+}
+body {
+  background-color: #d4dded;
 }

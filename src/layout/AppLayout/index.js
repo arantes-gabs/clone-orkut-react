@@ -1,21 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import Header from 'components/Header';
-import './app-layout.scss';
-import isClient from 'utils/envs/isClient';
-import { navigate } from 'gatsby';
+import Header from "components/Header";
+import "./app-layout.scss";
+import isClient from "utils/envs/isClient";
+import { navigate } from "gatsby";
 
 const AppLayout = ({ children, className }) => {
-  useEffect(() => {
-    if (isClient()) {
-      if (!localStorage.getItem('session')) {
-        navigate('/login');
-      }
-    }
-  });
-
   return (
-    <div className={`app-layout ${className ? className : ''}`}>
+    <div className={`app-layout ${className ? className : ""}`}>
       <Header />
 
       <main className="app-layout__content">{children}</main>

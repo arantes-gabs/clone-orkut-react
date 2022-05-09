@@ -1,16 +1,18 @@
 .header {
-  box-shadow: 2px 8px 16px 0 rgba(24,50,115,0.06);
+  box-shadow: 2px 8px 16px 0 rgba(24, 50, 115, 0.06);
   padding: 12px 0;
-  
+  background-color: #779dcd;
+
   &__content {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
   }
 
   &__search {
     width: 100%;
-    
+
     *:focus + * {
       color: red;
       background: red;
@@ -36,7 +38,7 @@
     position: relative;
 
     &--actived {
-      color: #9C9898;
+      color: #9c9898;
       // &::after {
       //   content: '';
       //   display: block;
@@ -49,7 +51,7 @@
       // }
     }
   }
-  
+
   &__link-icon {
     margin-right: 8px;
   }

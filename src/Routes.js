@@ -3,16 +3,9 @@ module.exports = {
     path: `/`,
     component: `src/pages/Home/index.js`,
   },
-  profile: {
-    path: `/profile`,
-    component: `src/pages/Profile/index.js`,
-  },
+
   login: {
     path: `/login`,
     component: `src/pages/Login/index.js`,
-  },
-  community: {
-    path: `/community`,
-    component: `src/pages/Community/index.js`,
   },
 };

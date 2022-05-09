@@ -1,10 +1,10 @@
-import { Link } from 'gatsby';
-import React from 'react';
-import Container from '@material-ui/core/Container';
-import TextField from '@material-ui/core/TextField';
+import { Link } from "gatsby";
+import React from "react";
+import Container from "@material-ui/core/Container";
+import TextField from "@material-ui/core/TextField";
 
-import './header.scss';
-import Logo from 'components/Logo';
+import "./header.scss";
+import Logo from "components/Logo";
 
 const Header = () => {
   return (
@@ -22,16 +22,17 @@ const Header = () => {
               <TextField
                 className="header__search"
                 label="encontrar pessoa 🔎"
+                variant="filled"
               />
             </form>
           </div>
-          <nav className="header__menu">
+          {/* <nav className="header__menu">
             <Link
               className="header__link"
               to="/"
               activeClassName="header__link--actived"
             >
-              <span className="header__link-icon"> 📊 </span>Painel
+              <span className="header__link-icon"> 📊 </span>Início
             </Link>
 
             <Link
@@ -39,7 +40,7 @@ const Header = () => {
               activeClassName="header__link--actived"
               to="/community"
             >
-              <span className="header__link-icon">🏘</span> comunidades
+              <span className="header__link-icon">🏘</span> Amigos
             </Link>
 
             <Link
@@ -47,9 +48,9 @@ const Header = () => {
               activeClassName="header__link--actived"
               to="/profile"
             >
-              <span className="header__link-icon">🐝</span> Meu perfil
+              <span className="header__link-icon">🐝</span> Comunidades
             </Link>
-          </nav>
+          </nav> */}
         </div>
       </Container>
     </header>
