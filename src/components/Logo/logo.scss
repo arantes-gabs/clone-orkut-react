@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 8px 16px 0 rgb(24 50 115 / 6%);
+  }
+
+  &__image {
+    width: 50px;
+  }
+
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 12px;
+    background: -webkit-linear-gradient(#ffd600, #efb506);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+}
