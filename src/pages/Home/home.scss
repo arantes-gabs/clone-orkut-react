@@ -1,2 +1,23 @@
 .home {
+  &-content {
+    display: flex;
+
+    &__boards {
+      display: grid;
+      grid-template-columns: auto 30%;
+      gap: 10px;
+      width: 100%;
+      padding: 10px;
+
+      &__status,
+      &__new-friends,
+      &__friends,
+      &__communities {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.22);
+      }
+    }
+  }
 }
