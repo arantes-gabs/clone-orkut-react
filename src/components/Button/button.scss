@@ -1,0 +1,16 @@
+.button {
+  border: none;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgb(255,214,0);
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(146deg, rgba(255,214,0,1) 0%, rgba(239,181,6,1) 61%);
+  transition: transform .3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

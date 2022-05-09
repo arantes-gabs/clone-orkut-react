@@ -1,7 +1,7 @@
-import Header from 'components/Header';
-import React from 'react';
-import './app-layout.scss';
-import { Button } from '@material-ui/core';
+import Header from "components/Header";
+import React from "react";
+import "./app-layout.scss";
+
 
 const AppLayout = ({ children }) => {
   return (
@@ -9,8 +9,6 @@ const AppLayout = ({ children }) => {
       <Header />
 
       <main className="app-layout__content">{children}</main>
-
-      <Button color="primary">Hello World</Button>
     </div>
   );
 };
