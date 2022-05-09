@@ -12,7 +12,9 @@ const Header = () => {
       <Container>
         <div className="header__content">
           <div className="header__logo-wrapper">
-            <Logo />
+            <Link to="/profile" className="header__logo-link">
+              <Logo />
+            </Link>
           </div>
 
           <div className="header__search-box">

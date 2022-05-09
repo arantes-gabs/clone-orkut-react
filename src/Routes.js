@@ -11,4 +11,8 @@ module.exports = {
     path: `/login`,
     component: `src/pages/Login/index.js`,
   },
+  community: {
+    path: `/community`,
+    component: `src/pages/Community/index.js`,
+  },
 };

@@ -1,0 +1,27 @@
+.insights {
+
+  &__box {
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 2px 8px 16px 0 rgba(24,50,115,0.06);
+  }
+
+  &__title {
+    margin-bottom: 12px;
+  }
+  
+  &__list {
+    list-style: none;
+  }
+  
+  &__list-item {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__list-text {
+    padding-left: 12px;  
+  }
+
+}

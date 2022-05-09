@@ -1,0 +1,29 @@
+.community-content {
+  padding: 20px 0 20px 0;
+
+  &__cards {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;*/
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    white-space: nowrap;
+    overflow: auto;
+    column-gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.MuiCard-root {
+  overflow: hidden !important;
+  min-width: 329px !important;
+  min-height: 300px;
+  white-space: break-spaces;
+}
+.title-community {
+ margin-top: 40px  !important;
+}
