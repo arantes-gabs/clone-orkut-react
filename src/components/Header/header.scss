@@ -5,9 +5,11 @@
 
   &__content {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    padding-right: 10px;
   }
 
   &__search {
@@ -24,7 +26,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 24px;
+    gap: 60px;
   }
 
   &__logo-link {
@@ -32,23 +34,16 @@
   }
 
   &__link {
-    color: #efb506;
+    color: rgba(18, 30, 72, 0.5);
     text-decoration: none;
     cursor: pointer;
     position: relative;
+    font-weight: bold;
+    font-size: 17px;
 
     &--actived {
-      color: #9c9898;
-      // &::after {
-      //   content: '';
-      //   display: block;
-      //   position: absolute;
-      //   right: 0;
-      //   width: 35%;
-      //   bottom: 0px;
-      //   background-color: #efb506;
-      //   height: 1px;
-      // }
+      color: rgba(18, 30, 72, 0.8);
+      border-bottom: 2px solid #ec1b90;
     }
   }
 

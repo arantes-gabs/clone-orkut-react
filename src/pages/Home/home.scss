@@ -4,7 +4,7 @@
 
     &__boards {
       display: grid;
-      grid-template-columns: auto 30%;
+      grid-template-columns: auto 40%;
       gap: 10px;
       width: 100%;
       padding: 10px;
@@ -17,6 +17,23 @@
         border-radius: 5px;
         padding: 10px;
         box-shadow: 0px 5px 4px -1px rgba(0, 0, 0, 0.22);
+      }
+      &__status {
+        &__icons {
+          gap: 20px;
+          display: flex;
+        }
+      }
+      &__friends {
+        max-width: 100%;
+        &__number {
+          color: #ec1b90;
+        }
+
+        &__photos img {
+          max-width: 100%;
+          border-radius: 5px; 
+        }
       }
     }
   }
