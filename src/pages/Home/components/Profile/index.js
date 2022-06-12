@@ -6,10 +6,9 @@ import VideoCameraBackOutlinedIcon from "@mui/icons-material/VideoCameraBackOutl
 import CollectionsOutlinedIcon from "@mui/icons-material/CollectionsOutlined";
 import AccountBoxOutlinedIcon from "@mui/icons-material/AccountBoxOutlined";
 import MarkunreadMailboxOutlinedIcon from "@mui/icons-material/MarkunreadMailboxOutlined";
-/* import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText"; */
-
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import "./profile.scss";
 
 const Profile = () => {
@@ -71,22 +70,27 @@ const Profile = () => {
             Vídeos
           </Link>
         </div>
-        {/* <List sx={style} component="nav" aria-label="mailbox folders">
-          <ListItem button>
-            <ListItemText primary="Inbox" />
-          </ListItem>
-          <Divider />
-          <ListItem button divider>
-            <ListItemText primary="Drafts" />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary="Trash" />
-          </ListItem>
-          <Divider light />
-          <ListItem button>
-            <ListItemText primary="Spam" />
-          </ListItem>
-        </List> */}
+        <Divider />
+        <div className="profile-sidebar__actions__items">
+          <Link className="link" activeClassName="link--actived" to="#">
+            <span className="link-icon">
+              <LightModeOutlinedIcon />
+            </span>{" "}
+            Depoimentos
+          </Link>
+          <Link className="link" activeClassName="link--actived" to="#">
+            <span className="link-icon">
+              <EmailOutlinedIcon />
+            </span>{" "}
+            Mensagens
+          </Link>
+          <Link className="link" activeClassName="link--actived" to="#">
+            <span className="link-icon">
+              <SettingsOutlinedIcon />
+            </span>{" "}
+            Configurações
+          </Link>
+        </div>
       </div>
     </div>
   );

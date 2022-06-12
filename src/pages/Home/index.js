@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../../components/Footer";
+import { Link } from "gatsby";
 import AppLayout from "layout/AppLayout";
 import Profile from "./components/Profile";
 import NewFriend from "./components/NewFriend";
@@ -52,7 +54,7 @@ const Home = () => {
               <h2>
                 Meus Amigos{" "}
                 <span className="home-content__boards__friends__number">
-                  (2)
+                  (3)
                 </span>
               </h2>
               <div className="home-content__boards__friends__photos">
@@ -60,11 +62,10 @@ const Home = () => {
                   sx={{
                     display: "flex",
                     flexWrap: "wrap",
-                    justifyContent: "space-evenly",
+                    justifyContent: "space-between",
                     "& > :not(style)": {
-                      m: 1,
-                      width: 100,
-                      height: 100,
+                      width: 110,
+                      height: 110,
                     },
                   }}
                 >
@@ -73,29 +74,91 @@ const Home = () => {
                       src="./images/profile.jpeg"
                       className="home-content__boards__friends__images"
                     />
+                    <p>Gabriel A.</p>
                   </Paper>
                   <Paper>
                     <img
                       src="./images/profile.jpeg"
                       className="home-content__boards__friends__images"
                     />
+                    <p>Gabriel A.</p>
                   </Paper>
                   <Paper>
                     <img
                       src="./images/profile.jpeg"
                       className="home-content__boards__friends__images"
                     />
+                    <p>Gabriel A.</p>
                   </Paper>
                 </Box>
               </div>
+
+              <Link
+                className="home-content__boards__friends__photos-link"
+                activeClassName="link--actived"
+                to="#"
+              >
+                Ver todos
+              </Link>
             </div>
             <div className="home-content__boards__new-friends">
               <h2>Novos pedidos de amizade (1)</h2>
               <NewFriend />
             </div>
-            <div className="home-content__boards__communities"></div>
+            <div className="home-content__boards__communities">
+              <h2>
+                Minhas Comunidades{" "}
+                <span className="home-content__boards__friends__number">
+                  (3)
+                </span>
+              </h2>
+              <div className="home-content__boards__friends__photos">
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "space-between",
+                    "& > :not(style)": {
+                      width: 110,
+                      height: 100,
+                    },
+                  }}
+                >
+                  <Paper>
+                    <img
+                      src="./images/react.png"
+                      className="home-content__boards__friends__images"
+                    />
+                    <p>React</p>
+                  </Paper>
+                  <Paper>
+                    <img
+                      src="./images/react.png"
+                      className="home-content__boards__friends__images"
+                    />
+                    <p>React</p>
+                  </Paper>
+                  <Paper>
+                    <img
+                      src="./images/react.png"
+                      className="home-content__boards__friends__images"
+                    />
+                    <p>React</p>
+                  </Paper>
+                </Box>
+              </div>
+
+              <Link
+                className="home-content__boards__friends__photos-link"
+                activeClassName="link--actived"
+                to="#"
+              >
+                Ver todos
+              </Link>
+            </div>
           </div>
         </div>
+        <Footer />
       </Container>
     </AppLayout>
   );
